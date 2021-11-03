@@ -102,7 +102,7 @@
     mainnet: "https://mainnet.api.tez.ie",
     granadanet: "https://granadanet.api.tez.ie",
     florencenet: "https://florencenet.api.tez.ie",
-    hangzhounet: "https://hangzhounet.api.tez.ie",
+    hangzhounet: "https://hangzhounet.api.tez.ie"
   };
   let expandAll = false;
   let contractLink = "";
@@ -706,7 +706,9 @@
         >
       </div>
       <div>
-        <span on:click={copyToClipboard}>Share a link to this contract</span>
+        <span on:click={copyToClipboard}>
+          Copy the contract link to the clipboard
+        </span>
         <input type="text" id="contract-link" value={contractLink} />
       </div>
     </div>
